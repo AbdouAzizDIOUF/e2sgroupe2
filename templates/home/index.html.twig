@@ -1,0 +1,171 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Acceuil{% endblock %}
+
+{% block body %}
+<section class="baniere" id="baniere">
+
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        DISPONIBLE 24H/24H ET 7J/7J
+    </div>
+
+    <div class="log" style=" position: fixed ; top: 5%;
+    right: 100%;
+    transform: translate(-5%, -100%)";>
+        <img src="/image/Es.png" alt="">
+    </div>
+    <div class="baniere_text">
+        <h1 class="text_shadows ">Bienvenu à E2S Groupe!</h1>
+        <p>Tout ce dont vous avez besoin, chez un seul et même groupe</p></div>
+    <div class="baniere_btn">
+        <a href="#Service"> <span></span> Savoir plus </a>
+    </div>
+</section>
+<div class="sidebar">
+    <nav>
+        <ul>
+            <li ><a href="/" > <i class="fas fa-house"></i> &nbsp Accueil</a></li>
+            <li ><a href="/gallia"><i class="fas fa-lock"></i> &nbsp Gallia Sécurité</a></li>
+            <li><a href="/top_home"><i class="fas fa-hand-spock"></i>&nbsp Top Home Services </a></li>
+            <li><a href="/top_pros"><i class="fas fa-hotel"></i> &nbsp Top Pros Services </a></li>
+            <li><a href="#"><i class="fas fa-calendar"></i> &nbsp Planning </a></li>
+        </ul>
+    </nav>
+</div>
+<div class="btn-menu">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-times"></i>
+</div>
+
+
+
+<section class="Service" id="Service">
+    <div class="titre-text">
+        <h1  style="color:#1560BD ;">Service de  qualité  avec des prix imbattables</h1>
+    </div>
+    <div class="service_boite">
+        <div class="service_unique">
+            <img src="/image/arton21504.png" alt="" style="height: 400px; " width="400px">
+            <div class="text_sur">
+                <div class="descript">
+                    <h3>Gallia Sécurité</h3>
+                    <hr>
+                    <p>Chaque employé de notre société a pour fonction de surveiller, garder ou protéger des individus, des biens, des informations, des propriétés (industrielles, commerciales, publiques ou privées)
+                        et en assurer la sécurité, le maintien de l'ordre, les protéger contre le vol, le feu, le vandalisme et les intrus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service_unique">
+            <img src="/image/top home.jpg" alt="" style="height: 400px; " width="400px">
+            <div class="text_sur">
+                <div class="descript">
+                    <h3>TOP Home Service   </h3>
+                    <hr>
+                    <p>TOP HOME SERVICES vous propose un  véritable programme pour vos besoins aux jours et aux heures de votre choix.
+                        En vous proposant  du nettoyage, rangement des placards, dépoussiérage des tapis et rideaux,
+                        nettoyage des vitres et repassage. Quels que soient vos besoins, nos intervenants sauront répondre efficacement à votre demande.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service_unique">
+            <img src="/image/home-cleaning.jpg" alt="" style="height: 400px; " width="400px">
+            <div class="text_sur">
+                <div class="descript">
+                    <h3>TOP Pros Services </h3>
+                    <hr>
+                    <p>TOP PROS SERVICES s’adapte aux besoins de sa clientèle. Un nettoyage est un entretien régulier et
+                        ponctuel de vos locaux, bureaux, commerces, industries, restaurants, ou parties communes contribuent à assainir
+                        votre lieu de travail et à vous apporter confort, santé et qualité de vie. Tout en respectant les réglementations
+                        associées à vos locaux et les règles de sécurité,
+                        notre société de nettoyage met toute son attention à satisfaire vos exigences d’hygiène et d’entretien.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <img src="/image/Es.png" alt="" class="img_footer">
+        <div class="titre-text">
+
+            <h1 style="color:#1560BD ;">N'hésitez pas à nous contacter  </h1>
+        </div>
+
+
+        <div class="pied-d">
+
+
+            <a href="https://www.google.com/maps/place/429+Rue+de+l'Industrie,+34000+Montpellier/@43.5869279,3.8814392,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6afc19c6f5781:0x4f564a8efd01f31d!8m2!3d43.5869279!4d3.8836279" > <p> 34070 MONTPELLIER
+                    429 Rue de l'Industrie <i class="fas fa-location-dot"></i> </a></p>
+            <a href=""> <p> 04.69.96.60.88  <i class="fas fa-mobile"></i>  </p></a>
+        </div>
+        </div>
+
+        <div class="reseaux_sociaux" style="margin-right: 90% ;">
+
+            <a href=""> <i class="fab fa-facebook-f"></i></a>
+
+
+
+        </div>
+        <style>
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #5fc429;
+                color: white;
+                text-align: center;
+            }
+        </style>
+
+        <div class="footer">
+
+            <p style="text-align:right ;">© 2022
+                Tous droits réservés | E2sGroupe </p>
+
+        </div>
+    </section>
+
+
+
+
+    <script>
+        document.querySelector('.fa-times').style.display = "none"
+        const menuBtn = document.querySelector(".btn-menu")
+        const Sidebar = document.querySelector(".sidebar")
+        menuBtn.onclick = function(){
+            if(Sidebar.style.right == "-250px"){
+                Sidebar.style.right ="0"
+                document.querySelector('.fa-times').style.display =""
+                document.querySelector('.fa-bars').style.display ="none"
+
+
+            }else{
+                Sidebar.style.right ="-250px"
+                document.querySelector('.fa-times').style.display ="none"
+                document.querySelector('.fa-bars').style.display =""
+            }
+        }
+
+
+    </script>
+
+    <script>
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+
+
+
+
+    </script>
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

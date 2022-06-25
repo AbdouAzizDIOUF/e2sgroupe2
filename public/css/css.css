@@ -1,0 +1,1096 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.baniere{
+    background: linear-gradient(rgba(15, 140, 179, 0), #5fc429), url(/image/auto.webp) center/cover no-repeat;
+    height : 100vh ;
+
+}
+.logo img{
+    width: 180px;
+    position:absolute ;
+    top: 4%;
+    left: 10%;
+}
+.baniere_text{
+    text-align: center;
+    color: #1560BD;
+    padding-top: 300px;
+}
+.baniere_text h1{
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+}
+.baniere_text p{
+    font-size: 20px;
+    font-style: italic;
+}
+.baniere_btn{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.baniere_btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition:  color 0.6s ease-in;
+}
+.baniere_btn a span{
+    width:0 ;
+    height: 100%;
+    background: #1560BD ;
+    position : absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.6s ease-in;
+}
+
+.baniere_btn a:hover span{
+    width: 100%;
+}
+.baniere_btn a:hover{
+
+    color: rgb(17, 17, 16);
+}
+
+
+
+
+.text_shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+    10% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    50% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+        12px 12px 0 var(--color-quinary);
+    }
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary),
+        6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(-12px, -12px);
+    }
+    50% {
+        transform: translate(-12px, -12px);
+    }
+    60% {
+        transform: translate(-12px, -12px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right:-250px;
+    background: #5fc429;
+
+}
+.sidebar a{
+    display:  ruby-base ;
+    width: 10%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 18px;
+}
+.titre-text  h1{
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+}
+
+
+.active {
+    background-color: #04AA6D;}
+
+
+nav ul li{
+    list-style: none;
+    margin: 20px 20px;
+
+}
+nav ul li a{
+    text-decoration: none ;
+    color: #fff;
+}
+.btn-menu {
+    width: 50px;
+    height: 50px;
+    background: #5fc429;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    border-radius: 10px;
+    z-index: 3;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align:center;
+    justify-content: center;
+    line-height: 50px;
+    transition: 0.6s ease-in;
+    cursor: pointer;
+}
+
+
+.intro h3{
+
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+.bg-image {
+    /* Full height */
+    height: 70%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("/image/evenementiel.jpg"); }
+.img2 { background-image: url("/image/Gardinnage.jpg"); }
+.img3 { background-image: url("/image/filtrage.jpg"); }
+.img4 { background-image: url("/image/intervention.jpg"); }
+.img5 { background-image: url("/image/arton21504.png"); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: #5fc429;
+    font-weight: bold;
+    font-size: 20px;
+    border: 10px solid #5fc429;
+    position: fixed ; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+.baniere_bt{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.baniere_bt a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #5fc429;
+    border: 1px solid #5fc429;
+    position: relative;
+    z-index: 1;
+    transition:  color 0.6s ease-in;
+}
+.baniere_bt a span{
+    width:0 ;
+    height: 100%;
+    background: #5fc429 ;
+    position : absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.6s ease-in;
+}
+
+.baniere_bt a:hover span{
+    width: 100%;
+}
+.baniere_bt a:hover{
+
+    color: rgb(17, 17, 16);
+}
+
+/*ALERRRTTT !!!!!!!!!  */
+
+/* The alert message box */
+.alert {
+    padding: 5px;
+    background-color: #5fc429  ; /* Red */
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    top: 5%;
+
+
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 97%;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+
+/*FIN ALERRRRT ! */
+.def h3{
+
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: #1560BD;
+    margin-top: 5%;
+
+
+}
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+    text-align: center;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.button:hover {
+    text-align: center;
+    background-color: #555;
+}
+
+
+/*  Début Top home  */
+
+.log img{
+    width: 150px;
+    position:absolute ;
+    top: 2%;
+    left: 3%;
+}
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100%;
+    height: 600px;
+    padding: 40px 60px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.section-1{
+    height: 100vh;
+    background-image: url(/image/home-cleaning.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-2{
+    background: #5fc429 ;
+
+}
+
+.section-3{
+    background-image: url(/image/home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-4{
+    background: #5fc429  ;
+}
+
+.section-5{
+    background-image: url(/image/services.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-6{
+    background: #5fc429  ;
+
+}
+.section-7{
+    background-image: url(/image/assistant.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-8{
+    background: #5fc429  ;
+
+
+}
+
+.section-9{
+    background-image: url(/image/bricolage.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-10{
+    background: #5fc429  ;
+
+
+}
+
+.section-11{
+    background-image: url(/image/enfant.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-12{
+    background: #5fc429  ;
+
+}
+.section-13{
+    background-image: url(/image/bureaux.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-14{
+    background: #5fc429  ;
+}
+.section-15{
+    background-image: url(/image/cop.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-16{
+    background: #5fc429  ;
+
+
+}
+.section-17{
+    background-image: url(/image/hotel.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-18{
+    background: #5fc429  ;
+
+}
+
+
+.box p{
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.box h1{
+    font-size: 50px;
+    text-shadow:  0px 0px 5px #000;
+}
+
+
+/*  Fin Top home  */
+
+.collapsible {
+    background-color: beige;
+    color: beige;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: justify;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.contact-boite{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contact {
+    flex-basis: 50%;
+}
+.im-contact {
+    background: linear-gradient(rgba(15, 140, 179, 0), #3c0ac5), url(/image/securite-incendie-.jpg) center/cover no-repeat;
+    height: 750px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+
+}
+.contact h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #3c0ac5;
+}
+.description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+.contact-icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #3c0ac5;
+    border: 1px solid #3c0ac5;
+
+}
+.contact-text p{
+    text-align: initial;
+    padding: 0 20px;
+
+}
+
+@media screen  and (max-width: 770px){
+
+    .baniere_text h1{
+        font-size: 40px;
+
+    }
+    .baniere_btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    .baniere{
+        height : 80vh;
+
+    }
+
+}
+.mission{
+    width: 100%;
+    padding: 70px 0;
+
+}
+.titre-text{
+    padding-bottom: 70px;
+    text-align: center;
+
+}
+.titre-text p{
+    margin: auto;
+    font-size: 20px;
+    color:  #5fc429;
+    font-weight: bold;
+    opacity: 0.5;
+    position: relative ;
+    z-index: 1;
+    display: inline-block;
+
+}
+
+.titre-text h1{
+    font-size: 50px;
+}
+.mission-boite{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.missions {
+    flex-basis: 50%;
+}
+.im-mission {
+    background: linear-gradient(rgba(15, 140, 179, 0), #5fc429), url(/image/rio.png) center/cover no-repeat;
+    height: 750px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+
+}
+.missions h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #5fc429;
+}
+.description{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+.mission-icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #5fc429;
+    border: 1px solid #5fc429;
+
+}
+.mission-text p{
+    text-align: initial;
+    padding: 0 20px;
+
+}
+
+
+
+
+
+
+/*Section top pro ******/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #1560BD;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*fin galery photos */
+.accordion {
+    background-color: beige;
+    color: black  ;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #5fc429   ;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/*Fin Section Top pro */
+
+@media screen  and (max-width: 770px){
+
+    .titre-text h1{
+        font-size: 35px;
+    }
+    .missions {
+        flex-basis: 100%;
+    }
+    .im-mission{
+        flex-basis: 100%;
+
+    }
+}
+
+.Service{
+    width: 100%;
+    padding: 70px 0;
+    background: beige;
+}
+.service_boite{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service_unique{
+    flex-basis: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    position: relative;
+    color: #f2f0f5;
+}
+
+
+.service_unique img {
+    width: 100%;
+    border-radius: 8px ;
+
+}
+.text_sur
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(#5fc429, #1560BD);
+    opacity: 0;
+    transition: 0.6s ease-in;
+}
+.service_unique:hover .text_sur {
+    opacity: 1;
+}
+.descript{
+    width:80% ;
+    position: absolute ;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.6s ease-in;
+    opacity: 0;
+}
+.descript p{
+    font-size: 14px;
+}
+.service_unique:hover .descript{
+    opacity: 1;
+    bottom: 40%;
+
+}
+
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+@media screen  and (max-width: 770px){
+
+    .service_unique{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+
+    }
+
+    .descript p{
+        font-size: 12px;
+    }
+
+    hr{
+
+        margin: 5px auto;
+
+    }
+
+    .service_unique:hover .descript{
+        bottom: 25%;
+
+    }
+}
+.contact{
+    padding: 100px 0 20px ;
+    background: beige;
+    position: relative;
+
+
+}
+.pied_page{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.pied_g, .pied_d{
+    flex-basis: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.pied-d{
+    text-align: right;
+
+}
+
+
+.pied_page h1{
+    margin: 10px 0;
+
+}
+.pied_g .fas{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #5fc429;
+}
+
+.pied-d .fas, .pied-d .fas{
+    margin-left: 10px;
+    font-size: 15px;
+    color: #5fc429;
+
+}
+
+.img_footer {
+    max-width: 300px;
+    opacity: 0.2;
+    position: absolute ;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    transition: 0.6s;
+
+}
+.img_footer:hover{
+    transform: translate(-50%);
+}
+
+
+.reseaux_sociaux{
+
+    text-align: center;
+
+}
+.reseaux_sociaux .fab{
+    height: 40px;
+    width: 40px ;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #528c34;
+    cursor: pointer;
+    transition: 0.6s ease-in;
+    color: #5fc429;
+}
+
+.reseaux_sociaux .fab:hover{
+    background: #1560BD;
+    color: #f2f0f5;
+    transform: translate(-50%, -50%);
+
+}
+
+
+@media screen  and (max-width: 770px){
+    .pied_g, .pied_d{
+        flex-basis: 100%;
+        align-items: center;
+    }
+    .pied_g{
+        text-align: initial;
+
+    }
+    .pied_d{
+        text-align: start;
+    }
+
+    .img_footer {
+        max-width: 300px;
+
+    }
+
+}
+
+
+
+
+.bgn-text {
+    background-color: #fff; /* Fallback color */
+    background-color:#fff; /* Black w/opacity/see-through */
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    border: 10px solid #5fc429;
+    position: absolute; /* Stay fixed */
+    top :130% ;
+    left: 80%;
+    transform: translate(-70%, -30%);
+    width: 700px;
+    padding: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+
+
+/* TOP PRO */
